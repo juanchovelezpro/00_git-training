@@ -27,14 +27,13 @@ Do:
 - ```  git checkout -b <my_name>  ```
 
 Util commands:  
-| Command                       	| Description      	|
-|-------------------------------	|------------------	|
-| git checkout -d <branch_name> 	| Delete a branch  	|
-| git checkout <banch_name>     	| Switch to branch 	|
-|                               	|                  	|
-|                               	|                  	|
-|                               	|                  	|
-|                               	|                  	|
+| Command                       | Description                                    |
+|-------------------------------|------------------------------------------------|
+| git branch -d <branch_name>   | Delete branch                                  |
+| git branch                    | View branches and highlight the current branch |
+| git checkout <branch_name>    | Switch to branch                               |
+| git checkout -b <branch_name> | Create and switch new branch                   |
+|                               |                                                |
 
 
 ### Add and Commit  
@@ -61,5 +60,31 @@ Or Also you can send the changes to other branch of your remote repository
 
 ### Open pull request  
 > Pull Requests initiate discussion about your commits. Because they're tightly integrated with the underlying Git repository, anyone can see exactly what changes would be merged if they accept your request.  
+![alt text](https://i.ibb.co/Gv8nFY1/pullrequest.png "Logo Title Text 1")  
+
+### Discuss and review your code
+> Once a Pull Request has been opened, the person or team reviewing your changes may have questions or comments. Perhaps the coding style doesn't match project guidelines, the change is missing unit tests, or maybe everything looks great and props are in order. Pull Requests are designed to encourage and capture this type of conversation.
+![alt text](https://i.ibb.co/DfvzqzM/propened.png "Logo Title Text 1")  
+
+### Update and merge
+You can update local repository to newest commit  
+- ```  git pull ```
+
+For merge current branch with other branch
+- ``` git merge <branch_name> ```  
+
+### Utils commands
+Replace local changes 
+- git checkout -- <filename>
+  
+Undo all changes and commit
+```
+git fetch origin
+git reset --hard origin/master  
+```
+
+## REFERENCES
+- https://rogerdudler.github.io/git-guide/index.es.html
+- https://guides.github.com/introduction/flow/
 
 
